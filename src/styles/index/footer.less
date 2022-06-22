@@ -1,0 +1,119 @@
+@charset 'utf-8';
+.yuan(@args) {
+  border-radius: @args;
+}
+.shenglue() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#footer {
+  width: 100%;
+  position: relative;
+  > .footer_one {
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > .w {
+      position: relative;
+    }
+    > .w .frist_footer {
+      margin: 25px 0px;
+    }
+    > .w > .frist_footer > .footerConetent_1 {
+      height: 100px;
+      display: flex;
+      background-image: url(../img/10159.jpg);
+      > div > a {
+        display: block;
+        width: 297px;
+        height: 100px;
+        flex: 1;
+      }
+    }
+    > .w > .footerConetent_2 {
+      height: 212px;
+      //   background-color: rgb(181, 43, 43);
+      border-top: 1px solid #ccc;
+      padding-top: 22px;
+      display: flex;
+      justify-content: flex-start;
+      > dl {
+        width: 238px;
+        padding-left: 52px;
+        color: #646464;
+        > dd > a {
+          display: block;
+          line-height: 20px;
+          font-size: 12px;
+          color: #8b8b8b;
+        }
+      }
+    }
+    .tmallicon {
+      position: absolute;
+      top: 337px;
+      left: 50px;
+    }
+  }
+
+  > .footer_two {
+    background-color: #000;
+    > .w > .footerConetent_3 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      > .tamll_1 {
+        height: 30px;
+        padding: 5px 0px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 12px;
+        > a {
+          color: #fff;
+          margin-right: 4px;
+        }
+      }
+      > .tamll_2 {
+        height: 36px;
+        padding: 8px 0px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #fff;
+        > a:nth-child(1) {
+          color: #fff;
+          margin-right: 8px;
+        }
+        > a:not(:nth-child(1)) {
+          color: #fff;
+          margin: 0px 8px;
+        }
+      }
+      > .footer_copy {
+        line-height: 20px;
+        color: #a4a4a4;
+        font-size: 12px;
+        > a {
+          color: #a4a4a4;
+          > img {
+            margin-right: 65px;
+            margin-top: 10px;
+          }
+        }
+      }
+      > .lastimg {
+        height: 71px;
+        width: 100%;
+        margin-bottom: 18px;
+        > img {
+          margin-left: 326px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
+// --------end-----------------

@@ -1,0 +1,108 @@
+@charset 'utf-8';
+.yuan(@args) {
+  border-radius: @args;
+}
+@imgu: "../img/";
+body > #main {
+  width: 100%;
+  background: url(../img/10158.png) no-repeat;
+  background-size: 100%;
+  > .banner_main {
+    background-color: #f74342;
+    height: 129px;
+  }
+  .banner_main .Topbanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f74342;
+    height: 129px;
+
+    > div {
+      width: 236px;
+      height: 88px;
+      .yuan(10px);
+      cursor: pointer;
+      background-color: #f74342;
+    }
+    > div:nth-child(-n + 4) {
+      margin-right: 2px;
+    }
+    > div:nth-child(1) {
+      background: url(../img/10001.png);
+    }
+    > div:nth-child(2) {
+      background: url(../img/10002.png);
+    }
+    > div:nth-child(3) {
+      background: url(../img/10003.png);
+    }
+    > div:nth-child(4) {
+      background: url(../img/10004.png);
+    }
+    > div:nth-child(5) {
+      background: url(../img/10005.png);
+    }
+  }
+}
+
+.search_content {
+  display: flex;
+  align-items: center;
+  height: 111px;
+  position: relative;
+  background-color: #ffffff;
+  > div {
+    height: 42px;
+    border: 1px solid;
+  }
+  > input {
+    margin-left: 252px;
+    box-sizing: content-box;
+    display: block;
+    height: 42px;
+    width: 585px;
+    border-radius: 21px 0 0 21px;
+    border: 1px solid red;
+    padding-left: 16px;
+  }
+  > p:nth-child(2) {
+    position: absolute;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    height: 45px;
+    width: 90px;
+
+    background-color: red;
+    .yuan(21px);
+    left: 788px;
+    top: 33px;
+    margin: 0 auto;
+    > a {
+      color: #fff;
+    }
+  }
+  > img {
+    width: 87px;
+    height: 53px;
+    position: absolute;
+    left: 68px;
+    top: 25%;
+  }
+}
+#main div[class^="bj"] {
+  width: 360px;
+  height: 800px;
+  border-style: none;
+  position: absolute;
+  //   top: 0;
+}
+.bj1 {
+  top: 0;
+  left: -360px;
+}
+.bj2 {
+  top: 0;
+  right: -360px;
+}

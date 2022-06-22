@@ -1,0 +1,244 @@
+@charset 'utf-8';
+.yuan(@args) {
+  border-radius: @args;
+}
+main > .logo {
+  height: 83px;
+  width: 990px;
+  padding: 20px 0px;
+  //   background-color: aqua;
+  > img {
+    height: 43px;
+    width: 80px;
+  }
+  > span {
+    line-height: 43px;
+    font-size: 22px;
+  }
+}
+main > .regContent {
+  height: 480px;
+  padding-top: 50px;
+  //   background-color: aquamarine;
+  > .header {
+    height: 103px;
+    width: 990px;
+    background-color: #fff;
+  }
+  > .reg-form {
+    display: flex;
+    justify-content: center;
+    > .reg-box {
+      width: 386px;
+      height: 306px;
+      //   background-color: bisque;
+      > div:nth-child(1) {
+        display: flex;
+        > label {
+          font-size: 14px;
+          width: 100px;
+          text-align: center;
+          line-height: 36px;
+        }
+        > .phone-box {
+          display: flex;
+          width: 320px;
+          height: 36px;
+          background-color: rgb(255, 255, 255);
+          border: 1px solid #ccc;
+          .yuan(3px);
+
+          > .country-select {
+            width: 106px;
+            height: 36px;
+            padding: 0px 10px;
+            border-right: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            line-height: 36px;
+            font-size: 14px;
+            position: relative;
+            cursor: pointer;
+            &:hover > .country-select-list {
+              display: block;
+            }
+            > .selectBox {
+              // display: flex;
+              > #selectbox {
+                outline: none;
+                cursor: pointer;
+                padding: 0px 6px;
+                border: 0px;
+                display: block;
+                text-align: center;
+                .yuan(3px);
+                > option {
+                  display: block;
+                  margin-bottom: 4px;
+                  cursor: pointer;
+                }
+              }
+            }
+            // > .country-select-list {
+            //   // display: flex;
+            //   width: 140px;
+            //   height: 200px;
+            //   position: absolute;
+            //   left: 0;
+            //   top: 37px;
+            //   border: 1px solid #ccc;
+            //   border-top: 0px;
+            //   overflow-y: scroll;
+            //   display: none;
+            //   > div {
+            //     display: flex;
+            //     justify-content: space-between;
+            //     background-color: #fff;
+            //     padding: 0px 8px;
+            //     font-size: 14px;
+            //   }
+            //   > .active_color {
+            //     background-color: #ccc;
+            //   }
+            // }
+          }
+          > .phone_div {
+            > input {
+              height: 36px;
+              padding-left: 4px;
+              .yuan(3px);
+            }
+          }
+        }
+      }
+
+      > div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        > label {
+          flex: 1;
+          text-align: center;
+          font-size: 14px;
+          line-height: 36px;
+          margin-left: 20px;
+        }
+        > .checkBox {
+          display: flex;
+          width: 293px;
+          height: 36px;
+          border: #ccc 1px solid;
+          .yuan(3px);
+          > #inputBox {
+            width: 210px;
+            > input {
+              height: 36px;
+              width: 100%;
+              .yuan(3px);
+            }
+          }
+          > a {
+            flex: 1;
+            font-size: 14px;
+            line-height: 36px;
+            background-color: #fff;
+            color: red;
+          }
+        }
+      }
+
+      > div:nth-child(3) {
+        width: 100%;
+        display: flex;
+        > .button {
+          width: 320px;
+          height: 36px;
+          margin: 50px 0px 0px 66px;
+          > a {
+            display: block;
+            width: 100%;
+            height: 36px;
+            background-image: linear-gradient(90deg, #f90, #ff5000);
+            text-align: center;
+            line-height: 36px;
+            color: #fff;
+            .yuan(3px);
+          }
+        }
+      }
+      > div:nth-child(4) {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: 50px;
+
+        > label {
+          width: 304px;
+          height: 29px;
+          //   background-color: rgb(156, 29, 29);
+          font-size: 14px;
+          > a {
+            color: red;
+          }
+
+          //   margin: 50px 0px 0px 66px;
+        }
+        > input {
+          margin-left: 30px;
+          margin-right: 6px;
+        }
+      }
+
+      > .to-email-reg {
+        font-size: 14px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        > a {
+          color: red;
+        }
+      }
+    }
+  }
+}
+// ---------------
+.footer {
+  width: 990px;
+  margin: 0 auto;
+  padding: 9px 0px;
+  border-top: 1px solid #ccc;
+  > .footer-hd {
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    padding-bottom: 4px;
+    border-bottom: #ccc 1px solid;
+    > p {
+      margin: 0px 4px;
+      > a:not(:nth-child(1)) {
+        padding: 0px 4px;
+      }
+      > a {
+        color: #6c6c6c;
+      }
+    }
+  }
+  > .footer-bd {
+    margin-top: 8px;
+    line-height: 30px;
+    > p {
+      font-size: 12px;
+      margin-right: 8px;
+    }
+    > p > a {
+      color: #6c6c6c;
+      margin-right: 8px;
+    }
+    > p:nth-child(2) {
+      font-size: 12px;
+      > span > a {
+        color: #6c6c6c;
+      }
+    }
+  }
+}

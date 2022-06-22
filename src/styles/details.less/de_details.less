@@ -1,0 +1,285 @@
+@charset 'utf-8';
+.yuan(@args) {
+  border-radius: @args;
+}
+.margin-mr() {
+  margin: 0 auto;
+}
+
+div.details {
+  //   width: 990px;
+  //   margin: 0 auto;
+  //   height: 10000px;
+  //   background-color: rgb(132, 90, 90);
+  //   overflow: hidden;
+
+  > div.main_box {
+    width: 990px;
+    // height: 1000px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    > div.left_nav {
+      width: 187px;
+      //   height: 1000px;
+      //   background-color: rgb(64, 51, 99);
+
+      > div.shopbox {
+        height: 174px;
+        // background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+
+        > div.shopName {
+          height: 48px;
+          color: #333;
+          font-size: 12px;
+          line-height: 48px;
+          text-align: center;
+          border: #999 1px solid;
+
+          > a {
+            color: #333;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        > div.shopMessage {
+          flex: 1;
+          border: #999 1px solid;
+          border-top: 0px;
+          position: relative;
+          > img {
+            width: 100%;
+          }
+
+          > span {
+            display: block;
+            width: 160px;
+            height: 30px;
+            position: absolute;
+            top: 98px;
+            left: 15px;
+            cursor: pointer;
+          }
+        }
+
+        > div.skin-box {
+          display: flex;
+          flex-direction: column;
+          font-size: 12px;
+          height: 100px;
+          padding: 10px;
+          > ul > li:nth-child(1) {
+            padding-bottom: 8px;
+          }
+        }
+
+        > div.babybox {
+          height: 14px;
+          padding: 8px;
+          text-align: left;
+          background-color: #ccc;
+          line-height: 14px;
+          font-size: 12px;
+          color: #666;
+          font-weight: 800;
+          margin-top: 20px;
+        }
+
+        > ul.classbox {
+          color: #333;
+          > li {
+            padding: 8px;
+            cursor: pointer;
+            &:hover {
+              background-color: #666;
+            }
+          }
+        }
+      }
+    }
+
+    > div.rightContent {
+      width: 787px;
+      //   height: 1000px;
+      //   background-color: rgb(212, 232, 114);
+      display: flex;
+      flex-direction: column;
+
+      > div.top_nav {
+        height: 48px;
+        border: 1px solid #999;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0px;
+
+        > div.left {
+          display: flex;
+          width: 300px;
+          > p {
+            flex: 1;
+            padding: 0px 10px;
+            font-size: 12px;
+            text-align: center;
+            line-height: 48px;
+            border-right: 1px solid #999;
+            cursor: pointer;
+          }
+        }
+
+        > div.right {
+          display: flex;
+          justify-content: flex-end;
+          font-size: 12px;
+          align-items: center;
+          cursor: pointer;
+          position: relative;
+          > i {
+            display: block;
+            padding: 0px 4px;
+            font-size: 24px;
+            color: #999;
+          }
+
+          > img {
+            width: 175px;
+            height: 175px;
+            position: absolute;
+            top: 48px;
+            right: 0px;
+            display: block;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #fff;
+            display: none;
+          }
+
+          &:hover {
+            i.icon-icon_sanjiaoxing {
+              transform: rotate(180deg);
+              transition: all 0.3s;
+            }
+            img {
+              display: block;
+            }
+          }
+        }
+      }
+
+      > div.definitePage {
+        height: 223px;
+        border: #999 1px solid;
+        > img {
+          width: 100%;
+          height: 223px;
+          display: block;
+        }
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+div.bottom_img {
+  width: 100%;
+  //   height: 516px;
+  margin: 0 auto;
+  > img {
+    display: block;
+    width: 100%;
+    // height: 516px;
+  }
+}
+
+footer {
+  margin-top: 10px;
+  height: 395px;
+  width: 100%;
+  background-color: rgb(84, 62, 212);
+  display: inline-table;
+  > div.w > .tm-wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 256px;
+    margin-top: 40px;
+    // background-color: rgb(172, 83, 83);
+    display: flex;
+    border-bottom: 1px solid #fff;
+    > div.left {
+      width: 360px;
+      > p {
+        padding-bottom: 20px;
+        color: #fff;
+        font-size: 12px;
+      }
+      > div {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+        left: 248px;
+        top: 4px;
+        line-height: 26px;
+        > img {
+          width: 96px;
+          height: 96px;
+          padding: 4px;
+          background-color: #fff;
+          .yuan(4px);
+        }
+      }
+    }
+
+    > div.right {
+      width: 840px;
+      display: flex;
+      justify-content: flex-end;
+      > dl {
+        padding-left: 100px;
+        color: #fff;
+        font-size: 12px;
+        > dt {
+          font-size: 18px;
+          padding-bottom: 20px;
+        }
+        > dd {
+          color: #ccc;
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+  div.w > div.botbox {
+    height: 50px;
+    a {
+      color: #ccc;
+    }
+    > ul {
+      display: flex;
+      font-size: 12px;
+      width: 100%;
+      margin-top: 20px;
+      > li {
+        padding: 0px 6px;
+        text-align: center;
+
+        &:not(li.tz) {
+          border-right: 1px solid #ccc;
+        }
+
+        > a {
+          color: #ccc;
+        }
+      }
+    }
+  }
+}

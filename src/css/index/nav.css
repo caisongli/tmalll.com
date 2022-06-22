@@ -1,0 +1,166 @@
+@charset 'utf-8';
+.nav {
+  width: 100%;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+.nav > .set-nav {
+  margin: 0 auto;
+  width: 990px;
+  height: 26px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+.nav > .set-nav > .left-nav {
+  width: 306px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+}
+.nav > .set-nav > .left-nav li {
+  padding: 0px 2px;
+}
+.nav > .set-nav > .left-nav li a {
+  color: #999;
+  font-size: 12px;
+}
+.nav > .set-nav > .left-nav li i {
+  color: red;
+}
+.nav > .set-nav > .left-nav li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+.nav > .set-nav > .right-nav {
+  width: 553px;
+  height: 26px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav > .set-nav > .right-nav li {
+  padding: 0px 4px;
+}
+.nav > .set-nav > .right-nav li a {
+  color: #999;
+  font-size: 12px;
+}
+.nav > .set-nav > .right-nav li > span {
+  display: block;
+  text-align: center;
+  margin-top: 4px;
+  width: 1px;
+  height: 18px;
+  background-color: #999;
+}
+.nav > .set-nav > .right-nav li i {
+  color: red;
+}
+.nav > .set-nav > .right-nav li a:link {
+  color: #666 !important;
+}
+.nav > .set-nav > .right-nav li a:hover {
+  color: red !important;
+  text-decoration: underline;
+}
+.nav > .set-nav > .right-nav li i[class$="sanjiaoxing"] {
+  margin-left: -4px;
+  color: #999;
+}
+.nav > .set-nav > .right-nav li:hover > i[class$="sanjiaoxing"] {
+  transition: all 0.5s;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+.nav > .set-nav > .right-nav > .menu {
+  position: relative;
+  padding-left: 10px;
+}
+.nav > .set-nav > .right-nav > .menu:hover {
+  background-color: #fff;
+}
+.nav > .set-nav > .right-nav > .menu:hover > .two-menu {
+  display: block;
+  background-color: #fff;
+}
+.nav > .set-nav > .right-nav > .menu > .two-menu {
+  position: absolute;
+  width: 90px;
+  padding: 10px 0px;
+  padding-left: 10px;
+  left: 0px;
+  top: 26px;
+  text-align: left;
+  line-height: normal;
+  background-color: #fff;
+  display: none;
+}
+.nav > .set-nav > .right-nav > .menu > .two-menu p > a {
+  color: #666;
+}
+.nav > .set-nav > .right-nav > .menu > .two-menu2 {
+  position: absolute;
+  padding: 8px 8px;
+  right: 0px;
+  top: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  display: none;
+  background-color: #fff;
+}
+.nav > .set-nav > .right-nav > .menu > .two-menu2 > div:nth-child(1) {
+  display: flex;
+  width: 128px;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #666;
+}
+.nav > .set-nav > .right-nav > .menu > .two-menu2 > div:nth-child(1) > dl {
+  display: block;
+}
+.nav > .set-nav > .right-nav > .menu > .two-menu2 > div:nth-child(1) > dl dd {
+  margin-top: 2px;
+}
+.nav
+  > .set-nav
+  > .right-nav
+  > .menu
+  > .two-menu2
+  > div:nth-child(1)
+  > dl:nth-child(1) {
+  padding-right: 18px;
+}
+.nav
+  > .set-nav
+  > .right-nav
+  > .menu
+  > .two-menu2
+  > div:nth-child(1)
+  > dl:nth-child(1)
+  > dt {
+  text-align: left;
+}
+.nav > .set-nav > .right-nav > .menu > .two-menu2 > div:nth-child(2) {
+  width: 128px;
+  text-align: left;
+  align-self: flex-start;
+  border-bottom: 1px dashed #999;
+}
+.nav > .set-nav > .right-nav > .menu > .two-menu2 > div:nth-child(2) > dl {
+  padding: 4px 0px;
+}
+.nav > .set-nav > .right-nav > .menu > .two-menu2 > div:nth-child(2) > dl dd {
+  margin-top: 4px;
+}
+.nav > .set-nav > .right-nav > .menu:hover .two-menu2 {
+  display: block;
+  z-index: 10;
+}

@@ -1,0 +1,202 @@
+@charset 'utf-8';
+main > .logo {
+  height: 83px;
+  width: 990px;
+  padding: 20px 0px;
+}
+main > .logo > img {
+  height: 43px;
+  width: 80px;
+}
+main > .logo > span {
+  line-height: 43px;
+  font-size: 22px;
+}
+main > .regContent {
+  height: 480px;
+  padding-top: 50px;
+}
+main > .regContent > .header {
+  height: 103px;
+  width: 990px;
+  background-color: #fff;
+}
+main > .regContent > .reg-form {
+  display: flex;
+  justify-content: center;
+}
+main > .regContent > .reg-form > .reg-box {
+  width: 386px;
+  height: 306px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(1) {
+  display: flex;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(1) > label {
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+  line-height: 36px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(1) > .phone-box {
+  display: flex;
+  width: 320px;
+  height: 36px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(1) > .phone-box > .country-select {
+  width: 106px;
+  height: 36px;
+  padding: 0px 10px;
+  border-right: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  line-height: 36px;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(1) > .phone-box > .country-select:hover > .country-select-list {
+  display: block;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(1) > .phone-box > .country-select > .selectBox > #selectbox {
+  outline: none;
+  cursor: pointer;
+  padding: 0px 6px;
+  border: 0px;
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(1) > .phone-box > .country-select > .selectBox > #selectbox > option {
+  display: block;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(1) > .phone-box > .phone_div > input {
+  height: 36px;
+  padding-left: 4px;
+  border-radius: 3px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(2) > label {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  line-height: 36px;
+  margin-left: 20px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(2) > .checkBox {
+  display: flex;
+  width: 293px;
+  height: 36px;
+  border: #ccc 1px solid;
+  border-radius: 3px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(2) > .checkBox > #inputBox {
+  width: 210px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(2) > .checkBox > #inputBox > input {
+  height: 36px;
+  width: 100%;
+  border-radius: 3px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(2) > .checkBox > a {
+  flex: 1;
+  font-size: 14px;
+  line-height: 36px;
+  background-color: #fff;
+  color: red;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(3) {
+  width: 100%;
+  display: flex;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(3) > .button {
+  width: 320px;
+  height: 36px;
+  margin: 50px 0px 0px 66px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(3) > .button > a {
+  display: block;
+  width: 100%;
+  height: 36px;
+  background-image: linear-gradient(90deg, #f90, #ff5000);
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  border-radius: 3px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(4) {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(4) > label {
+  width: 304px;
+  height: 29px;
+  font-size: 14px;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(4) > label > a {
+  color: red;
+}
+main > .regContent > .reg-form > .reg-box > div:nth-child(4) > input {
+  margin-left: 30px;
+  margin-right: 6px;
+}
+main > .regContent > .reg-form > .reg-box > .to-email-reg {
+  font-size: 14px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+main > .regContent > .reg-form > .reg-box > .to-email-reg > a {
+  color: red;
+}
+.footer {
+  width: 990px;
+  margin: 0 auto;
+  padding: 9px 0px;
+  border-top: 1px solid #ccc;
+}
+.footer > .footer-hd {
+  height: 36px;
+  line-height: 36px;
+  font-size: 12px;
+  padding-bottom: 4px;
+  border-bottom: #ccc 1px solid;
+}
+.footer > .footer-hd > p {
+  margin: 0px 4px;
+}
+.footer > .footer-hd > p > a:not(:nth-child(1)) {
+  padding: 0px 4px;
+}
+.footer > .footer-hd > p > a {
+  color: #6c6c6c;
+}
+.footer > .footer-bd {
+  margin-top: 8px;
+  line-height: 30px;
+}
+.footer > .footer-bd > p {
+  font-size: 12px;
+  margin-right: 8px;
+}
+.footer > .footer-bd > p > a {
+  color: #6c6c6c;
+  margin-right: 8px;
+}
+.footer > .footer-bd > p:nth-child(2) {
+  font-size: 12px;
+}
+.footer > .footer-bd > p:nth-child(2) > span > a {
+  color: #6c6c6c;
+}

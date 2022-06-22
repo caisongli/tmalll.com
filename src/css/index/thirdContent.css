@@ -1,0 +1,188 @@
+@charset 'utf-8';
+.mainhome .position_div {
+  margin-top: 18px;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.thirdContent {
+  width: 100%;
+  padding: 18px 18px 0px 18px;
+  border-radius: 0px 0px 18px 18px;
+}
+.thirdContent > .title_1 {
+  height: 40px;
+}
+.thirdContent > .title_1 > img {
+  height: 34px;
+}
+.thirdContent .imgContent_1 {
+  margin-top: 16px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-flow: wrap;
+}
+.thirdContent .imgContent_1 > div {
+  width: 220px;
+  height: 304px;
+}
+.thirdContent .imgContent_1 > div > a {
+  text-decoration: none;
+}
+.thirdContent .imgContent_1 > div > a > img {
+  display: block;
+  height: 220px;
+  border-radius: 10px;
+}
+.thirdContent .imgContent_1 > div > a > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 11px;
+  color: #000;
+}
+.thirdContent .imgContent_1 > div > a > h4 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 5px;
+  color: #ff5000;
+}
+.thirdContent > .title_2 {
+  height: 40px;
+  margin-top: 18px;
+}
+.thirdContent > .title_2 > img {
+  height: 34px;
+}
+.thirdContent .imgContent_2 {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-flow: wrap;
+  margin-top: 16px;
+}
+.thirdContent .imgContent_2 > div {
+  width: 220px;
+  height: 304px;
+  margin-bottom: 13px;
+}
+.thirdContent .imgContent_2 > div > a {
+  text-decoration: none;
+}
+.thirdContent .imgContent_2 > div > a > img {
+  display: block;
+  height: 220px;
+  border-radius: 10px;
+}
+.thirdContent .imgContent_2 > div > a > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 11px;
+  color: #000;
+}
+.thirdContent .imgContent_2 > div > a > h4 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 5px;
+  color: #ff5000;
+}
+.thirdContent .imgContent_2 > div:nth-child(1) {
+  background: url(../img/10040.jpg) no-repeat;
+  background-size: 220px 304px;
+  border-radius: 10px;
+}
+.thirdContent .imgContent_2 > div:nth-child(6) {
+  background: url(../img/10041.jpg) no-repeat;
+  background-size: 220px 304px;
+  border-radius: 10px;
+}
+.thirdContent .imgContent_2 .b_11 > a,
+.thirdContent .imgContent_2 .b_22 > a {
+  display: block;
+  width: 190px;
+  height: 72px;
+  font-size: 17px;
+  margin-top: 200px;
+  background-color: #280107;
+  text-align: center;
+}
+.thirdContent .imgContent_2 .b_11 > a > p,
+.thirdContent .imgContent_2 .b_22 > a > p {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.thirdContent .imgContent_2 .b_11 > a > p:nth-child(2),
+.thirdContent .imgContent_2 .b_22 > a > p:nth-child(2) {
+  width: 1px;
+  height: 40px;
+  background-color: #ffffff;
+  margin: 0px 14px;
+  margin-bottom: 2px;
+}
+.thirdContent > .title_3 {
+  height: 24px;
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+}
+.thirdContent > .title_3 > .topLeft {
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 4px;
+}
+.thirdContent > .title_3 > .tuijian {
+  width: 68px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: red;
+  line-height: 20px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 8px;
+}
+.thirdContent .imgContent_3 {
+  margin-top: 18px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-flow: wrap;
+}
+.thirdContent .imgContent_3 > div {
+  width: 220px;
+  height: 304px;
+}
+.thirdContent .imgContent_3 > div > a {
+  text-decoration: none;
+}
+.thirdContent .imgContent_3 > div > a > img {
+  display: block;
+  height: 220px;
+  border-radius: 10px;
+}
+.thirdContent .imgContent_3 > div > a > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 11px;
+  color: #000;
+}
+.thirdContent .imgContent_3 > div > a > h4 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 5px;
+  color: #ff5000;
+}
+#main > .tiaozheng {
+  width: 100%;
+  height: 100px;
+  background-color: #f6f3f3;
+  overflow: hidden;
+}
