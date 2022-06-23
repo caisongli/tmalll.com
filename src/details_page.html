@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/details_css/de_header.css" />
     <link rel="stylesheet" href="./styles/details_css/de_main.css" />
     <link rel="stylesheet" href="./styles/details_css/de_details.css" />
+    <link rel="stylesheet" href="./swiper-7.4.1/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <script src="./js/item.js" type="module"></script>
     <script src="./js/fdj.js"></script>
@@ -238,12 +239,12 @@
           <!--  -->
           <div class="bigimg" style="z-index: 1; display: none">
             <!-- 大盒子 -->
-            <img src="./img/logimg/jingyou/10043.jpg" alt="" />
+            <!-- <img src="./img/logimg/jingyou/10043.jpg" alt="" /> -->
           </div>
           <!--  -->
           <div>
             <ul>
-              <li name="cick_li">
+              <li name="cick_li" class="ImgBox">
                 <img src="./img/logimg/jingyou/10001.jpg" alt="" />
                 <img
                   src="./img/logimg/jingyou/10010.jpg"
@@ -295,7 +296,7 @@
         <div class="main_middle">
           <div>
             <p style="color: #7a45e5">泰国品牌 菜鸟郑州保税1号仓发货</p>
-            <h1>
+            <h1 id="h1_title">
               BanyanTree悦榕庄柠檬草与黄瓜沐浴露滋润补水持久留香男女沐浴乳
             </h1>
             <p>补水保湿持久留香</p>
@@ -303,7 +304,9 @@
           <div>
             <p>
               <span>价格</span>
-              <span style="color: red; font-size: 24px; font-weight: 900"
+              <span
+                style="color: red; font-size: 24px; font-weight: 900"
+                id="price"
                 >¥ 238.00-398.00</span
               >
             </p>
@@ -341,9 +344,9 @@
                 <span>净含量</span>
                 <span>数量</span>
               </div>
-              <div class="rightbox">
+              <div class="rightbox" id="ProductSelection">
                 <div>
-                  <p>椰子海藻</p>
+                  <p class="active">椰子海藻</p>
                   <p>泰姹梦娜</p>
                   <p>玫瑰人参</p>
                   <p>柠檬草黄瓜</p>
@@ -406,30 +409,45 @@
           </div>
         </div>
         <!-- 右侧轮播图 -->
-        <div class="main_right">
+
+        <div class="main_right swiper">
           <div>--------- 看了又看 ---------</div>
           <div class="lunbobox">
-            <ul class="imgbox">
-              <li><img src="./img/logimg/jingyou/10001.jpg" alt="" /></li>
+            <ul class="imgbox swiper-wrapper">
+              <div class="swiper-slide">
+                <li><img src="./img/logimg/jingyou/10001.jpg" alt="" /></li>
+                <li><img src="./img/logimg/jingyou/10003.jpg" alt="" /></li>
+                <li><img src="./img/logimg/jingyou/10005.jpg" alt="" /></li>
+                <li><img src="./img/logimg/jingyou/10007.jpg" alt="" /></li>
+                <li><img src="./img/logimg/jingyou/10008.jpg" alt="" /></li>
+                <li><img src="./img/logimg/jingyou/10009.jpg" alt="" /></li>
+              </div>
+              <!-- <li><img src="./img/logimg/jingyou/10001.jpg" alt="" /></li>
               <li><img src="./img/logimg/jingyou/10003.jpg" alt="" /></li>
               <li><img src="./img/logimg/jingyou/10005.jpg" alt="" /></li>
               <li><img src="./img/logimg/jingyou/10007.jpg" alt="" /></li>
               <li><img src="./img/logimg/jingyou/10008.jpg" alt="" /></li>
-              <li><img src="./img/logimg/jingyou/10009.jpg" alt="" /></li>
+              <li><img src="./img/logimg/jingyou/10009.jpg" alt="" /></li> -->
             </ul>
           </div>
           <ul class="btn">
             <li class="left">
-              <i class="iconfont icon-xiangshang2" style="font-size: 35px"></i>
+              <i
+                class="swiper-button-prev1 iconfont icon-shangjiantou"
+                style="font-size: 30px"
+              ></i>
             </li>
             <li class="right">
               <i
-                class="iconfont icon-xialajiantouxiao"
-                style="font-size: 35px"
+                class="iconfont icon-xialajiantouxiao swiper-button-next2"
+                style="font-size: 30px"
               ></i>
             </li>
           </ul>
         </div>
+        <!-- script -->
+        <script src="./swiper-7.4.1/swiper/swiper-bundle.js"></script>
+        <!-- scripts end -->
       </div>
     </main>
     <div class="details w">

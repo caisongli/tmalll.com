@@ -1,4 +1,4 @@
-import $ from './jquery.esm.js';
+import $ from './lib/jquery.esm.js';
 
 $.ajax({
   type: "get",

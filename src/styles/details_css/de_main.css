@@ -344,6 +344,38 @@ main
   > p:hover {
   border-color: red;
 }
+
+main
+  > .main_content
+  > .main_middle
+  > div:nth-child(5)
+  > div.topbox
+  > div.rightbox
+  > div
+  > p.active {
+  color: red;
+  border: 2px solid red;
+  font-size: 12px;
+}
+
+/* main
+  > .main_content
+  > .main_middle
+  > div:nth-child(5)
+  > div.topbox
+  > div.rightbox
+  > div
+  > p::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  color: red;
+  border: 2px solid red;
+  /* position: relative; */
+/* bottom: 0; */
+/* left: 0; */
+/* } */
 main
   > .main_content
   > .main_middle
@@ -551,7 +583,7 @@ main > .main_content > .main_right > ul.btn {
   display: flex;
   width: 140px;
   height: 30px;
-  bottom: 130px;
+  bottom: 108px;
   left: 36px;
   justify-content: space-between;
   text-align: center;

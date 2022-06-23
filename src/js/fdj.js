@@ -3,59 +3,68 @@ window.onload = function () {
     const click_li = document.querySelectorAll('li[name="cick_li"]');
 
     const img_li = document.querySelectorAll('img[class="z_index"]');
-
+    const bigimg = document.querySelector('div.bigimg');
     //-----------------选项卡功能---------------
-
+console.log(bigimg);
     [...click_li].forEach((item) => {
         
         item.addEventListener('mousemove', function (e) {
-           
-            [...img_li].forEach((items) => {
-                items.style.zIndex = '1';
-            });
-            [...click_li].forEach((items) => {
-                items.firstElementChild.style = 'border:0';
-            });
-            this.lastElementChild.style.zIndex = '2';
-            // this.lastElementChild.style = 'pointer-events: none;';
+
+            // if (e.target == img_li) {
+                
+                [...img_li].forEach((items) => {
+                    items.style.zIndex = '0';
+                });
+                [...click_li].forEach((items) => {
+                    items.firstElementChild.style = 'border:0';
+                });
+                this.lastElementChild.style.zIndex = '1';
+                // this.lastElementChild.style = 'pointer-events: none;';
             this.firstElementChild.style = 'border: 1px solid';
+            console.log(this.lastElementChild.src);
+            bigimg.firstElementChild.src=this.lastElementChild.src
+            
+            // }
+           
+            
         });
     })
 
    //-----------------放大镜--------------------
     const imgbox = document.querySelector('.imgbox');
     const smalldiv = document.querySelector('.imgbox >.smalldiv');
-    const bigimg = document.querySelector('div.bigimg');
-    const big_img = document.querySelector('div.bigimg>img');
+    // const bigimg = document.querySelector('div.bigimg');
+    const main_left = document.querySelector('.main_content>div.main_left');
+    console.log(main_left);
 
     imgbox.onmouseover = function (ev) { 
         smalldiv.style.display = 'block';
         bigimg.style.display = 'block';
     }
 
-
-    imgbox.onmousemove = function (ev) { 
-       
-        smalldiv.style.zIndex = '3';
-        let x = ev.offsetX-100;
-        let y = ev.offsetY-100;
-        // console.log(x,y);
-
-        if (x <= 20) {
-            x = 20;
-        } else if (x >= 243) { x=243}
-        if (y <= 20) { y = 20}else if(y >= 222) { y= 222 };
-        smalldiv.style.left = x+'px';
-        smalldiv.style.top = y + 'px';
-        // console.log(ev.offsetX, ev.offsetY);
-        // left:-376px；top:-400
-        if (y <= 40) { y = 0}else if(y >= 200) { y = 200 };
-        if (x <= 40) { x = 0}else if(x >= 190) { x= 190 };
-        
-        big_img.style.left = -2 * x + 'px';
-        big_img.style.top = -2 * y + 'px';
-
-    }
+    main_left.onmousemove = function (ev) { 
+        if (ev.target==imgbox) {
+            smalldiv.style.zIndex = '6';
+            let x = ev.offsetX-100;
+            let y = ev.offsetY-100;
+            // console.log(x,y);
+            
+            if (x <= 20) {
+                x = 20;
+            } else if (x >= 243) { x=243}
+            if (y <= 20) { y = 20}else if(y >= 222) { y= 222 };
+            smalldiv.style.left = x+'px';
+            smalldiv.style.top = y + 'px';
+            // console.log(ev.offsetX, ev.offsetY);
+            // left:-376px；top:-400
+            if (y <= 40) { y = 0}else if(y >= 200) { y = 200 };
+            if (x <= 40) { x = 0}else if(x >= 190) { x= 190 };
+            
+            const big_img = document.querySelector('div.bigimg>img');
+            big_img.style.left = -2 * x + 'px';
+            big_img.style.top = -2 * y + 'px';
+        }
+     }
 
     imgbox.onmouseout = function (ev) { 
         smalldiv.style.display = 'none';
@@ -100,7 +109,45 @@ window.onload = function () {
       
 
     }
+    //-----------轮播图--------------
     
+    const swiper1 = new Swiper('.lunbobox',{
+        // effect:'cube',
+        navigation: {
+          nextEl: ".swiper-button-next2",
+          prevEl: ".swiper-button-prev1",
+        },
+        direction: "vertical",
+        pagination: {
+        el: '.swiper-pagination',
+        clickable :true,
+        },
+        speed: 300,
+        loop:true,
+        autoplay: {
+          disableOnInteraction: false,
+          
+        }
+    });
     
-    
+    //---------------------点击选择---------------------------------------------
+    const SelectionBox = document.querySelectorAll('#ProductSelection>div');
+    const Selectionp = document.querySelectorAll('#ProductSelection>div>p');
+
+    console.log(SelectionBox);
+            
+        [...Selectionp].forEach(items => {
+                
+            items.onclick = function (events) {
+                [...Selectionp].forEach(items => {
+                     items.removeAttribute('class');
+                 })
+                
+
+                this.classList.add('active',"iconfont", "icon-yixuanzhong2");
+                // this.innerHTML = `<i class = 'iconfont icon-yixuanzhong2'></>`
+            };
+                
+            
+        })
  }
