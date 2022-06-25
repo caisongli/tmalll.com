@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/reg_css/header.css" />
     <link rel="stylesheet" href="./css/reset.css" />
   </head>
+  <script src="./js/reg.js" type="module"></script>
   <body>
     <div class="header">
       <img src="./img/logimg/10001.png" alt="" />
@@ -26,7 +27,11 @@
       <div class="logonBox">
         <div class="loading" style="background-color: #e9e9f2">
           <div class="icon">
-            <img src="./img/logimg/Snipaste_2022-06-19_15-56-27.png" alt="" />
+            <img
+              id="codebtn"
+              src="./img/logimg/Snipaste_2022-06-19_15-56-27.png"
+              alt=""
+            />
           </div>
           <div class="title">
             <span class="active">密码登录</span>
@@ -84,7 +89,7 @@
                   class="iconfont icon-fork"
                   style="color: rgba(255, 145, 0, 0.904); font-size: 14px"
                 ></i>
-                请输入手机号
+                没输入手机号或格式不正确
               </div>
               <div class="phone-box">
                 <label for="phone" class="icon-1">
@@ -92,8 +97,9 @@
                 </label>
                 <span class="fugai"
                   >+86
-                  <img src="./img/logimg/10003.png" alt="" />
+                  <!-- <img src="./img/logimg/10003.png" alt="" /> -->
                 </span>
+                <img src="./img/logimg/10003.png" alt="" class="anniu" />
                 <select id="selectbox">
                   <option value="+86">中国大陆 &nbsp;+86</option>
                   <option value="+852">中国香港 &nbsp;+852</option>
@@ -107,7 +113,6 @@
                 </select>
                 <input
                   type="tel"
-                  name=""
                   id="phone"
                   placeholder="请输入手机号"
                   maxlength="11"
@@ -118,7 +123,7 @@
                   <i class="iconfont icon-zhaoxiangji" style="color: #fff"></i>
                 </label>
                 <input type="text" id="yz" placeholder="请输入验证码" />
-                <h4>获取验证码</h4>
+                <h4 class="getmsg">获取验证码</h4>
               </div>
               <button type="submit" style="display: block">登录</button>
               <div class="swich-box">

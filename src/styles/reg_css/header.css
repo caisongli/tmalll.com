@@ -89,7 +89,9 @@
   box-sizing: border-box;
   position: absolute;
   top: 0;
-  display: none;
+  /* display: none; */
+  display: block;
+  /* ------------------------------------ */
 }
 .container > div.logonBox > div.loading > div.logon_wrap > div.pwd > .cue-box {
   box-sizing: border-box;
@@ -100,13 +102,26 @@
   background-color: #fef2f2;
   color: #3c3c3c;
   margin-bottom: 10px;
+  display: none;
+  /* 出错显示框 */
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.phone-box {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.phone-box {
   display: flex;
   position: relative;
   margin-bottom: 20px;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.phone-box > label.icon-1 {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.phone-box
+  > label.icon-1 {
   width: 40px;
   height: 40px;
   background-color: #cccccc;
@@ -114,20 +129,44 @@
   justify-content: center;
   align-items: center;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.phone-box > label.icon-1 > .icon-wode-wode {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.phone-box
+  > label.icon-1
+  > .icon-wode-wode {
   font-size: 23px;
   color: #fff;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.phone-box > #phone {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.phone-box
+  > #phone {
   flex: 1;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.pwd-box {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.pwd-box {
   display: flex;
   position: relative;
   width: 300px;
   margin-bottom: 20px;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.pwd-box > label.icon-2 {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.pwd-box
+  > label.icon-2 {
   width: 40px;
   height: 40px;
   background-color: #cccccc;
@@ -135,16 +174,30 @@
   justify-content: center;
   align-items: center;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.pwd-box > label.icon-2 > i {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.pwd-box
+  > label.icon-2
+  > i {
   font-size: 23px;
   color: #ffffff;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.pwd-box > #yz {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.pwd-box
+  > #yz {
   flex: 1;
   padding-left: 8px;
 }
 .container > div.logonBox > div.loading > div.logon_wrap > div.pwd > button {
   height: 40px;
+  width: 100%;
   background-color: #ff4400;
   border: 0px;
   border-radius: 3px;
@@ -153,21 +206,42 @@
   margin-bottom: 20px;
   cursor: pointer;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > button:hover {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > button:hover {
   background-color: #f52b00;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.swich-box {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.swich-box {
   font-size: 12px;
   cursor: pointer;
   margin-left: 5px;
   color: #6c6c6c;
   margin-bottom: 16px;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.reg1-box {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.reg1-box {
   display: flex;
   justify-content: flex-end;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.pwd > div.reg1-box > a {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.pwd
+  > div.reg1-box
+  > a {
   font-size: 12px;
   color: #6c6c6c;
   padding: 0px 4px;
@@ -178,6 +252,9 @@
   box-sizing: border-box;
   position: absolute;
   top: 0;
+  display: none;
+  width: 100%;
+  /* 手机登录 */
 }
 .container > div.logonBox > div.loading > div.logon_wrap > div.tel > .cue-box {
   box-sizing: border-box;
@@ -190,13 +267,25 @@
   color: #3c3c3c;
   margin-bottom: 10px;
   display: none;
+  /* 出错显示 */
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.phone-box {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.phone-box {
   display: flex;
   position: relative;
   margin-bottom: 20px;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.phone-box > label.icon-1 {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.phone-box
+  > label.icon-1 {
   width: 40px;
   height: 40px;
   background-color: #cccccc;
@@ -204,10 +293,23 @@
   justify-content: center;
   align-items: center;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.phone-box > label.icon-1 > i {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.phone-box
+  > label.icon-1
+  > i {
   font-size: 23px;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.phone-box > #selectbox {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.phone-box
+  > #selectbox {
   width: 75px;
   height: 40px;
   border: 0px;
@@ -215,34 +317,67 @@
   background-color: transparent;
   cursor: pointer;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.phone-box > .fugai {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.phone-box
+  > .fugai {
   display: block;
   width: 75px;
   height: 40px;
   position: absolute;
   left: 40px;
   top: 0px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   pointer-events: none;
   line-height: 40px;
   text-indent: 4px;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.phone-box > .fugai > img {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.phone-box
+  > img.anniu {
   display: block;
+  /* display: none; */
   position: absolute;
   height: 30px;
   top: 6px;
-  left: 48px;
+  left: 80px;
+  pointer-events: none;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.phone-box > #phone {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.phone-box
+  > #phone {
   flex: 1;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.pwd-box {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.pwd-box {
   display: flex;
   position: relative;
   margin-bottom: 20px;
+  /* display: block; */
+  /* ---------------------------------------------------------------- */
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.pwd-box > label.icon-2 {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.pwd-box
+  > label.icon-2 {
   width: 40px;
   height: 40px;
   background-color: #cccccc;
@@ -250,23 +385,46 @@
   justify-content: center;
   align-items: center;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.pwd-box > label.icon-2 > i {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.pwd-box
+  > label.icon-2
+  > i {
   font-size: 23px;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.pwd-box > #yz {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.pwd-box
+  > #yz {
   flex: 1;
   padding-left: 8px;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.pwd-box > h4 {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.pwd-box
+  > h4 {
   line-height: 40px;
   font-size: 12px;
-  padding-right: 10px;
-  background-color: #fff;
+  /* padding-right: 10px; */
+  background-color: rgb(255, 255, 255);
+  width: 66px;
+  text-align: center;
+  height: 100%;
   color: #6c6c6c;
   cursor: pointer;
 }
 .container > div.logonBox > div.loading > div.logon_wrap > div.tel > button {
   height: 40px;
+  width: 100%;
   background-color: #ff4400;
   border: 0px;
   border-radius: 3px;
@@ -275,21 +433,42 @@
   margin-bottom: 20px;
   cursor: pointer;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > button:hover {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > button:hover {
   background-color: #f52b00;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.swich-box {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.swich-box {
   font-size: 12px;
   cursor: pointer;
   margin-left: 5px;
   color: #6c6c6c;
   margin-bottom: 16px;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.reg1-box {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.reg1-box {
   display: flex;
   justify-content: flex-end;
 }
-.container > div.logonBox > div.loading > div.logon_wrap > div.tel > div.reg1-box > a {
+.container
+  > div.logonBox
+  > div.loading
+  > div.logon_wrap
+  > div.tel
+  > div.reg1-box
+  > a {
   font-size: 12px;
   color: #6c6c6c;
 }
@@ -304,6 +483,8 @@
   display: flex;
   flex-direction: column;
   display: none;
+  box-sizing: border-box;
+  /* display: block; */
 }
 .container > div.logonBox > div.loading div.codebox > .img1 {
   position: absolute;
@@ -319,7 +500,7 @@
 }
 .container > div.logonBox > div.loading div.codebox > div.imgbox {
   width: 100%;
-  height: 100%;
+  height: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -334,8 +515,8 @@
 }
 .container > div.logonBox > div.loading div.codebox > p {
   position: absolute;
-  top: 280px;
-  left: 128px;
+  top: 266px;
+  left: 114px;
   font-size: 12px;
   color: #6c6c6c;
   padding-left: 26px;
@@ -355,7 +536,7 @@
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  top: 340px;
+  top: 332px;
   right: 36px;
 }
 .container > div.logonBox > div.loading div.codebox > div.code-reg-box > a {
