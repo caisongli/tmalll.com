@@ -21,7 +21,7 @@ console.log(bigimg);
                 this.lastElementChild.style.zIndex = '1';
                 // this.lastElementChild.style = 'pointer-events: none;';
             this.firstElementChild.style = 'border: 1px solid';
-            console.log(this.lastElementChild.src);
+            // console.log(this.lastElementChild.src);
             bigimg.firstElementChild.src=this.lastElementChild.src
             
             // }
@@ -135,18 +135,35 @@ console.log(bigimg);
     const Selectionp = document.querySelectorAll('#ProductSelection>div>p');
 
     console.log(SelectionBox);
-            
+    let i = 0;
         [...Selectionp].forEach(items => {
-                
             items.onclick = function (events) {
+               
                 [...Selectionp].forEach(items => {
-                     items.removeAttribute('class');
-                 })
+                    items.removeAttribute('class');
+                });
+                this.classList.add('active');
+                this.setAttribute('num', `${i++}`);
+                if (this.getAttribute('num') % 2) {
+                    this.classList.remove('active');
+                };
                 
+                this.onmouseout = function () {
 
-                this.classList.add('active',"iconfont", "icon-yixuanzhong2");
-                // this.innerHTML = `<i class = 'iconfont icon-yixuanzhong2'></>`
+                    i = 0;
+
+                 }
+                // if (i > 10) {
+                //     i = 0;
+                // }
+            //     if (this.hasAttribute('c4')) {
+            //        console.log(1);
+            //   }
+
             };
+
+              
+
                 
             
         })
