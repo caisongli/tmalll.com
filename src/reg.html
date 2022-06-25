@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./styles/reg_css/header.css" />
     <link rel="stylesheet" href="./css/reset.css" />
   </head>
-  <script src="./js/reg.js" type="module"></script>
   <body>
     <div class="header">
       <img src="./img/logimg/10001.png" alt="" />
@@ -34,13 +33,13 @@
             />
           </div>
           <div class="title">
-            <span class="active">密码登录</span>
-            <span>短信登录</span>
+            <span>密码登录</span>
+            <span class="active">短信登录</span>
           </div>
           <div class="logon_wrap">
             <!-- 密码登录 -->
             <div class="pwd">
-              <div class="cue-box">
+              <div class="cue-box" style="display: none">
                 <i
                   class="iconfont icon-fork"
                   style="color: rgba(255, 145, 0, 0.904); font-size: 14px"
@@ -66,7 +65,7 @@
                 </label>
                 <input type="text" id="yz" placeholder="请输入验证码" />
               </div>
-              <button type="submit" style="display: block">登录</button>
+              <button type="submit" style="width: 100%">登录</button>
               <div class="swich-box">
                 <i class="iconfont icon-logo-weibo" style="color: red"></i>
                 <span>微博登录</span>
@@ -95,11 +94,20 @@
                 <label for="phone" class="icon-1">
                   <i class="iconfont icon-shouji1" style="color: #fff"></i>
                 </label>
-                <span class="fugai"
-                  >+86
-                  <!-- <img src="./img/logimg/10003.png" alt="" /> -->
-                </span>
-                <img src="./img/logimg/10003.png" alt="" class="anniu" />
+                <span class="fugai">+86 </span>
+                <img
+                  src="./img/logimg/10003.png"
+                  alt=""
+                  class="anniu"
+                  style="
+                    display: block;
+                    position: absolute;
+                    height: 30px;
+                    top: 6px;
+                    left: 80px;
+                    pointer-events: none;
+                  "
+                />
                 <select id="selectbox">
                   <option value="+86">中国大陆 &nbsp;+86</option>
                   <option value="+852">中国香港 &nbsp;+852</option>
@@ -123,9 +131,11 @@
                   <i class="iconfont icon-zhaoxiangji" style="color: #fff"></i>
                 </label>
                 <input type="text" id="yz" placeholder="请输入验证码" />
-                <h4 class="getmsg">获取验证码</h4>
+                <h4 class="getmsg" style="width: 66px; text-align: center">
+                  获取验证码
+                </h4>
               </div>
-              <button type="submit" style="display: block">登录</button>
+              <button type="submit" style="width: 100%">登录</button>
               <div class="swich-box">
                 <i class="iconfont icon-logo-weibo" style="color: red"></i>
                 <span>微博登录</span>
@@ -141,7 +151,7 @@
             </div>
           </div>
           <!-- 扫码框 -->
-          <div class="codebox">
+          <div class="codebox" style="box-sizing: border-box">
             <img class="img1" src="./img/logimg/erweima.png" alt="" />
             <h3>手机扫码,安全登录</h3>
             <div class="imgbox">
@@ -227,3 +237,5 @@
     </div>
   </body>
 </html>
+<script src="./js/reg.js" type="module"></script>
+<!-- <link rel="stylesheet" href="./styles/reg_css/header.css" /> -->

@@ -335,7 +335,7 @@
   line-height: 40px;
   text-indent: 4px;
 }
-.container
+/* .container
   > div.logonBox
   > div.loading
   > div.logon_wrap
@@ -343,13 +343,12 @@
   > div.phone-box
   > img.anniu {
   display: block;
-  /* display: none; */
   position: absolute;
   height: 30px;
   top: 6px;
   left: 80px;
   pointer-events: none;
-}
+} */
 .container
   > div.logonBox
   > div.loading
