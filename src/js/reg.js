@@ -56,20 +56,24 @@ $('.codebox>.img1').click(function () {
 // -------------end--------------------------------
 
 //-------------获取验证码倒计时-----------------------
-$('.getmsg').click(function () {
+// if ($('input[type=tel]').hasClass('ture')) {
+//     $('.getmsg').click(function () {
 
-    let num = 10;
-    let timer = setInterval(() => {
-        num--;
-        if (num === 0) {
-            num = randomCode();
-            clearInterval(timer);
-        };
-        $(this).text(num).css({ 'color': 'red', 'background-color': '#6ed5c9', 'font-size': '16px', 'font-weight': 'bold' });
-    }, 1000);
+//         let num = 10;
+//         let timer = setInterval(() => {
+//             num--;
+//             if (num === 0) {
+//                 num = randomCode();
+//                 clearInterval(timer);
+//             };
+//             $(this).text(num).css({ 'color': 'red', 'background-color': '#6ed5c9', 'font-size': '16px', 'font-weight': 'bold' });
+//         }, 1000);
 
 
-});
+//     });
+
+// }
+
 
 // --------------获取区号-------------------
 
@@ -121,28 +125,70 @@ function randomCode() {
     return empty;
 
 }
+//-------------获取验证码倒计时-----------------------
+// if ($('input[type=tel]').hasClass('ture')) {
+$('.getmsg').click(function () {
 
+    if ($('input[type=tel]').hasClass('ture')) {
+
+
+
+
+        let num = 10;
+        let timer = setInterval(() => {
+            num--;
+            if (num === 0) {
+                num = randomCode();
+                clearInterval(timer);
+            };
+            $(this).text(num).css({ 'color': 'red', 'background-color': '#6ed5c9', 'font-size': '16px', 'font-weight': 'bold' });
+        }, 1000);
+    }
+
+});
+
+// }
 //----------------验证密码------------------
 
-$('.pwd-box input[type=text]').blur(function () {
-    $(this).removeClass('ture');
-    // console.log(2);
+// if ($('input[type=tel]').hasClass('ture')) {
+$('.pwd-box input[type=text]').focus(function () {
 
-    let value1 = $(this).val();
-    console.log(value1);
-    let value2 = $('.getmsg').text();
-    console.log(value2);
-    if (value1 === value2) {
-        $(this).attr('class', 'ture');
+    if ($('input[type=tel]').hasClass('ture')) {
+        $('.pwd-box input[type=text]').blur(function () {
+            $(this).removeClass('ture');
+            let value1 = $(this).val();
+            console.log(value1);
+            let value2 = $('.getmsg').text();
+            console.log(value2);
+            if (value1 === value2) {
+                $(this).attr('class', 'ture');
+                $('.tel>.cue-box').css('display', 'none')
+            } else if (!value1) {
+                if (value2.length > 1 && value2.length < 5) {
+                    $('.tel>.cue-box').css('display', 'block').text('请输入验证码！');
+                } else {
+                    $('.tel>.cue-box').css('display', 'block').text('请获取验证码！');
+                }
+
+            }
+            else {
+                if (value2.length > 1 && value2.length < 5) {
+                    $('.tel>.cue-box').css('display', 'block').text('验证码错误！');
+                } else {
+                    $('.tel>.cue-box').css('display', 'block').text('请获取验证码！');
+                }
+
+            }
+        })
+    } else {
+        $('.pwd-box input[type=text]').blur();
         $('.tel>.cue-box').css('display', 'none')
-    } else if (!value1) {
-        $('.tel>.cue-box').css('display', 'block').text('请获取验证码！');
     }
-    else {
-        $('.tel>.cue-box').css('display', 'block').text('验证码错误！');
-    }
-
 })
+// } else {
+// }
+
+
 
 //-----------------登录-------------------------
 
@@ -156,7 +202,9 @@ $('button[type=submit]').click(function () {
     } else {
         alert('登录失败!')
     }
-
 })
+
+
+
 //--------------------end------------------------------------
 
