@@ -33,7 +33,7 @@
 
   if($inserted){
     echo '<script>alert("注册成功");</script>';
-    echo '<script>location.href="../eg03.login.html";</script>';
+    echo '<script>location.href="../src/reg.html";</script>';
   }
 
 
